@@ -7,6 +7,7 @@ An AI-powered Resume Screening API built with FastAPI. The application extracts 
 - Resume upload and processing
 - Resume text extraction
 - Candidate information extraction
+- AI-powered resume analysis using Gemini API
 - Resume screening based on job requirements
 - FastAPI REST API
 - Interactive Swagger API documentation
@@ -15,6 +16,7 @@ An AI-powered Resume Screening API built with FastAPI. The application extracts 
 
 - Python
 - FastAPI
+- Gemini API
 - SQLAlchemy
 - PostgreSQL
 - NLP
