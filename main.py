@@ -1,9 +1,16 @@
 from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 
 from models import ScreenRequest, ScreenResult
 from screener import screen_resume
 
 app = FastAPI(title="AI Resume Screening API")
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
 @app.get("/")
